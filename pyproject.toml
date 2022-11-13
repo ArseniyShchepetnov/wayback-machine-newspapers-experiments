@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "wayback-machine-newspapers-experiments"
+version = "0.1.0"
+description = ""
+authors = ["Arseniy Shchepetnov <a.shchepetnov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = {path = "../torch-1.11.0+cu113-cp38-cp38-linux_x86_64.whl"}
+jupyterlab = "^3.4.8"
+pytorch-lightning = "^1.7.7"
+matplotlib = "^3.6.0"
+transformers = "^4.22.2"
+pymongo = "^4.2.0"
+fairseq = {path = "../fairseq"}
+scikit-learn = "^1.1.2"
+fastBPE = "^0.1.0"
+sentencepiece = "^0.1.97"
+wordcloud = "^1.8.2.2"
+nltk = "^3.7"
+pymystem3 = "^0.2.0"
+gensim = "^4.2.0"
+pandas = "^1.5.1"
+plotly = "^5.11.0"
+spacy = "^3.4.3"
+jupyterlab-system-monitor = "^0.8.0"
+tqdm = "^4.64.1"
+ipywidgets = "^8.0.2"
+jupyterlab-widgets = "^3.0.3"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.13.7"
+autopep8 = "^1.6.0"
+mypy = "^0.942"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
